@@ -1,14 +1,24 @@
 {
   "name": "bases-node",
   "version": "1.0.0",
-  "description": "Este es un ejemplo académico",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seraleman/bases-node.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seraleman/bases-node/issues"
+  },
+  "homepage": "https://github.com/seraleman/bases-node#readme",
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "yargs": "^8.0.0"
   }
 }

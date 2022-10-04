@@ -1,12 +1,12 @@
+const colors = require('colors')
+
 const { crearArchivo } = require('./helpers/multiplicar')
-require('colors')
+const argv = require('./helpers/yargs')
 
 console.clear()
 
-const base = 104
-
-crearArchivo(base)
+crearArchivo(argv.b, argv.l, argv.h)
   .then((nombreArchivo) =>
-    console.log(`Archivo con nombre ${nombreArchivo.red} creado`)
+    console.log(`Archivo con nombre ${colors.green(nombreArchivo)} creado`)
   )
   .catch((error) => console.error(`Este es el error ${error}`))
